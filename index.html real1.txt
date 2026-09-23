@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navjot Brar Official | Telegram Community</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #02050d;
+      color: #ffffff;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 700px;
+      margin: auto;
+      padding: 55px 34px 35px;
+      text-align: center;
+      background:
+        radial-gradient(circle at 50% 10%, #071a35 0%, #02050d 38%);
+      min-height: 100vh;
+    }
+
+    /* Top Brand */
+    .brand {
+      color: #8b94a8;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 5px;
+      margin-bottom: 55px;
+    }
+
+    /* Profile Photo */
+    .profile-wrapper {
+      display: inline-block;
+      padding: 7px;
+      border: 3px solid #073d7b;
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px #061226;
+    }
+
+    .profile-img {
+      width: 155px;
+      height: 155px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      border: 3px solid #1d6fcb;
+    }
+
+    /* Welcome Badge */
+    .welcome {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 11px 22px;
+      border: 1px solid #1a2638;
+      border-radius: 30px;
+      color: #e8ebf1;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      background: rgba(5, 10, 20, 0.7);
+    }
+
+    h1 {
+      font-size: 48px;
+      line-height: 1.15;
+      margin-top: 48px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .subtitle {
+      color: #8c93a3;
+      font-size: 25px;
+      line-height: 1.55;
+      margin: 28px auto 0;
+      max-width: 590px;
+    }
+
+    /* Main Telegram Button */
+    .join-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+      min-height: 91px;
+      margin-top: 45px;
+      border-radius: 27px;
+      background: linear-gradient(135deg, #1595ff, #0879e8);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 28px;
+      font-weight: 700;
+      box-shadow: 0 12px 30px rgba(0, 116, 255, 0.25);
+      transition: all 0.25s ease;
+    }
+
+    .join-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 38px rgba(0, 116, 255, 0.42);
+    }
+
+    .telegram-svg {
+      width: 34px;
+      height: 34px;
+      fill: none;
+      stroke: white;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .free-note {
+      color: #858d9d;
+      font-size: 18px;
+      margin-top: 25px;
+    }
+
+    /* Stats */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 75px;
+      border: 1px solid #151d2a;
+      border-radius: 32px;
+      overflow: hidden;
+      background: rgba(4, 8, 16, 0.65);
+    }
+
+    .stat {
+      padding: 34px 10px;
+      position: relative;
+    }
+
+    .stat:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 15px;
+      bottom: 15px;
+      width: 1px;
+      background: #1b2432;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .stat span {
+      color: #858d9d;
+      font-size: 17px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Section Heading */
+    .section-title {
+      font-size: 30px;
+      font-weight: 700;
+      margin-top: 75px;
+      margin-bottom: 38px;
+    }
+
+    /* Feature Cards */
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: left;
+    }
+
+    .feature-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 22px;
+      padding: 30px 29px;
+      border: 1px solid #151d2a;
+      border-radius: 30px;
+      background: rgba(4, 8, 16, 0.65);
+    }
+
+    .check {
+      width: 42px;
+      height: 42px;
+      min-width: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #00351e;
+      color: #00d95a;
+      font-size: 27px;
+      font-weight: bold;
+    }
+
+    .feature-content h3 {
+      font-size: 23px;
+      line-height: 1.3;
+      margin-bottom: 9px;
+    }
+
+    .feature-content p {
+      color: #858d9d;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    /* Bottom Button */
+    .bottom-btn {
+      margin-top: 65px;
+    }
+
+    /* Disclaimer */
+    .disclaimer {
+      color: #737b8b;
+      font-size: 16px;
+      line-height: 1.7;
+      margin-top: 38px;
+    }
+
+    /* Maxjohn Footer */
+    .maxjohn {
+      margin-top: 38px;
+      padding-top: 24px;
+      border-top: 1px solid #111925;
+      color: #697181;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .maxjohn a {
+      color: #aab3c4;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .maxjohn a:hover {
+      color: #1595ff;
+      text-decoration: underline;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 55px 34px 30px;
+      }
+
+      .brand {
+        font-size: 16px;
+        letter-spacing: 4px;
+        margin-bottom: 50px;
+      }
+
+      .profile-img {
+        width: 145px;
+        height: 145px;
+      }
+
+      h1 {
+        font-size: 39px;
+        margin-top: 45px;
+      }
+
+      .subtitle {
+        font-size: 22px;
+        margin-top: 25px;
+      }
+
+      .welcome {
+        font-size: 13px;
+        padding: 11px 17px;
+      }
+
+      .join-btn {
+        min-height: 90px;
+        font-size: 24px;
+        border-radius: 25px;
+      }
+
+      .free-note {
+        font-size: 16px;
+      }
+
+      .stats {
+        margin-top: 65px;
+        border-radius: 27px;
+      }
+
+      .stat {
+        padding: 30px 5px;
+      }
+
+      .stat strong {
+        font-size: 30px;
+      }
+
+      .stat span {
+        font-size: 14px;
+      }
+
+      .section-title {
+        font-size: 28px;
+        margin-top: 65px;
+      }
+
+      .feature-card {
+        padding: 27px 28px;
+        gap: 20px;
+        border-radius: 27px;
+      }
+
+      .check {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+      }
+
+      .feature-content h3 {
+        font-size: 21px;
+      }
+
+      .feature-content p {
+        font-size: 18px;
+      }
+
+      .disclaimer {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- TOP BRAND -->
+    <div class="brand">NAVJOT BRAR OFFICIAL</div>
+
+    <!-- PROFILE PHOTO
+         GitHub me photo ka naam profile.jpg rakho -->
+    <div class="profile-wrapper">
+      <img
+        src="profile.jpg"
+        alt="Navjot Brar"
+        class="profile-img"
+      >
+    </div>
+
+    <!-- WELCOME BADGE -->
+    <div class="welcome">
+      WELCOME TO OFFICIAL NAVJOT BRAR METHOD
+    </div>
+
+    <!-- MAIN TITLE -->
+    <h1>NAVJOT BRAR OFFICIAL</h1>
+
+    <p class="subtitle">
+      Get exclusive updates, tips, and community access.
+    </p>
+
+    <!-- MAIN TELEGRAM BUTTON -->
+    <!-- Yahan apna actual Telegram channel link lagao -->
+    <a
+      href="https://t.me/YOUR_TELEGRAM_LINK"
+      class="join-btn"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg class="telegram-svg" viewBox="0 0 24 24">
+        <path d="M21.5 3.5L3.2 10.6c-1.25.5-1.24 1.2-.23 1.5l4.7 1.47 1.8 5.5c.23.64.12.9.78.9.52 0 .75-.24 1.02-.52l2.28-2.2 4.74 3.5c.87.48 1.5.23 1.72-.8L23.2 4.5c.32-1.28-.49-1.86-1.7-1z"/>
+        <path d="M8.4 13.4l9.3-5.87c.44-.27.84-.12.51.17l-7.7 6.96-.3 3.12"/>
+      </svg>
+      <span>Join Free on Telegram</span>
+    </a>
+
+    <p class="free-note">
+      100% Free · No card required · Leave anytime
+    </p>
+
+    <!-- STATS -->
+    <div class="stats">
+
+      <div class="stat">
+        <strong>25K+</strong>
+        <span>Members</span>
+      </div>
+
+      <div class="stat">
+        <strong>Daily</strong>
+        <span>Market Updates</span>
+      </div>
+
+      <div class="stat">
+        <strong>Free</strong>
+        <span>Always</span>
+      </div>
+
+    </div>
+
+    <!-- FEATURES HEADING -->
+    <h2 class="section-title">What you get inside</h2>
+
+    <!-- FEATURES -->
+    <div class="features">
+
+      <div class="feature-card">
+        <div class="check">✓</div>
+        <div class="feature-content">
+          <h3>Daily market analysis</h3>
+          <p>Clear, jargon-free breakdowns every day.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="check">✓</div>
+        <div class="feature-content">
+          <h3>Price-action setups</h3>
+          <p>Educational chart studies and key levels.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="check">✓</div>
+        <div class="feature-content">
+          <h3>Risk-management lessons</h3>
+          <p>Learn position sizing and protecting capital.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="check">✓</div>
+        <div class="feature-content">
+          <h3>Beginner friendly</h3>
+          <p>Start from basics, ask questions, learn at your pace.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM TELEGRAM BUTTON -->
+    <a
+      href="https://t.me/YOUR_TELEGRAM_LINK"
+      class="join-btn bottom-btn"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg class="telegram-svg" viewBox="0 0 24 24">
+        <path d="M21.5 3.5L3.2 10.6c-1.25.5-1.24 1.2-.23 1.5l4.7 1.47 1.8 5.5c.23.64.12.9.78.9.52 0 .75-.24 1.02-.52l2.28-2.2 4.74 3.5c.87.48 1.5.23 1.72-.8L23.2 4.5c.32-1.28-.49-1.86-1.7-1z"/>
+        <path d="M8.4 13.4l9.3-5.87c.44-.27.84-.12.51.17l-7.7 6.96-.3 3.12"/>
+      </svg>
+      <span>Join Free on Telegram</span>
+    </a>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      For educational purposes only. Trading and investing in financial
+      markets involves risk. This is not financial advice.
+    </div>
+
+    <!-- MAXJOHN FOOTER -->
+    <div class="maxjohn">
+      Ads managed by
+      <a
+        href="https://t.me/maxjohn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Maxjohn
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>

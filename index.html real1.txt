@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navjot Brar Official | Telegram Community</title>
+  <title>
+TRADE WITH GOUTAM JHA Official | Telegram Community</title>
 
   <style>
     * {
@@ -349,13 +350,14 @@
   <div class="container">
 
     <!-- TOP BRAND -->
-    <div class="brand">NAVJOT BRAR OFFICIAL</div>
+    <div class="brand">
+TRADE WITH GOUTAM JHA</div>
 
     <!-- PROFILE PHOTO
          GitHub me photo ka naam profile.jpg rakho -->
     <div class="profile-wrapper">
       <img
-        src="profile.jpg"
+        src="gautam.jpg"
         alt="Navjot Brar"
         class="profile-img"
       >
@@ -367,7 +369,8 @@
     </div>
 
     <!-- MAIN TITLE -->
-    <h1>NAVJOT BRAR OFFICIAL</h1>
+    <h1>
+TRADE WITH GOUTAM JHA</h1>
 
     <p class="subtitle">
       Get exclusive updates, tips, and community access.
@@ -376,7 +379,7 @@
     <!-- MAIN TELEGRAM BUTTON -->
     <!-- Yahan apna actual Telegram channel link lagao -->
     <a
-      href="https://t.me/YOUR_TELEGRAM_LINK"
+      href="https://t.me/+cjfhbhpk8EhkODY1"
       class="join-btn"
       target="_blank"
       rel="noopener noreferrer"
@@ -454,7 +457,7 @@
 
     <!-- BOTTOM TELEGRAM BUTTON -->
     <a
-      href="https://t.me/YOUR_TELEGRAM_LINK"
+      href="https://t.me/+cjfhbhpk8EhkODY1"
       class="join-btn bottom-btn"
       target="_blank"
       rel="noopener noreferrer"
@@ -480,7 +483,7 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        Maxjohn
+        john
       </a>
     </div>
 
